@@ -11,27 +11,29 @@
         url(../images/BGI-hero.jpg);
     background-size: cover;
     background-position: center;
+
+    &__container {
+        padding-top: 200px;
+        padding-bottom: 200px;
+        text-align: center;
+    }
+    
+    &__title {
+        width: 696px;
+        margin-top: 0;
+        margin-bottom: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        color: var(--button-text-color);
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+    }
 }
 
-.hero__container {
-    padding-top: 200px;
-    padding-bottom: 200px;
-    text-align: center;
-}
 
-.hero__title {
-    width: 696px;
-    margin-top: 0;
-    margin-bottom: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    color: var(--button-text-color);
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-}
 
 .hero__button {
     display: inline-block;
@@ -51,9 +53,11 @@
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: #188ce8;
+    }
+
 }
 
-.hero__button:hover,
-.hero__button:focus {
-    background-color: #188ce8;
-}
